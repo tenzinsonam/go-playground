@@ -1,0 +1,11 @@
+create an item
+curl -X POST -H "Content-Type: application/json" -d '{"name":"Item 1","price":10.99}' http://localhost:8080/items
+
+get all items
+curl http://localhost:8080/items
+
+update an item
+curl -X PUT -H "Content-Type: application/json" -d '{"name":"Updated Item","price":15.99}' http://localhost:8080/items/ITEM_ID
+
+delete an item
+curl -X DELETE http://localhost:8080/items/ITEM_ID
